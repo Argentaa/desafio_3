@@ -1,27 +1,31 @@
 {
-  "name": "desafio_3",
+  "name": "petshop-fullstack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full-stack PetShop application with React frontend and Express backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/server.js",
-    "dev": "ts-node src/server.ts",
-    "build": "tsc"
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "express",
+    "fullstack",
+    "petshop"
+  ],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.15.3",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }

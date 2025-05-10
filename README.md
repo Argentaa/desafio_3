@@ -1,6 +1,13 @@
-# PetShop Backend API
+# PetShop Full-Stack Application
 
-This is the backend API for a pet shop website built with Node.js, TypeScript, and SQLite.
+This is a full-stack PetShop application with a React frontend and Express backend.
+
+## Project Structure
+
+The project is organized into two main directories:
+
+- `backend/`: Contains the Express.js API server
+- `frontend/`: Contains the React frontend application
 
 ## Features
 
@@ -9,37 +16,62 @@ This is the backend API for a pet shop website built with Node.js, TypeScript, a
 - Product details API
 - Contact form submission API
 - SQLite database
+- React frontend with Tailwind CSS and Shadcn UI
+- Responsive design
 
 ## Prerequisites
 
 - Node.js (v14 or higher)
-- npm
+- npm (v6 or higher)
 
 ## Installation
 
-1. Clone the repository
-2. Install dependencies:
+1. Install dependencies for both projects:
 
 ```bash
-npm install
+npm run install:all
 ```
 
-3. Build the project:
+This will install dependencies for both the backend and frontend.
+
+## Development
+
+To run both the backend and frontend in development mode:
+
+```bash
+npm run dev
+```
+
+This will start:
+- Backend server at http://localhost:3000
+- Frontend development server at http://localhost:5173
+
+To run only the backend:
+
+```bash
+npm run dev:backend
+```
+
+To run only the frontend:
+
+```bash
+npm run dev:frontend
+```
+
+## Building for Production
+
+To build both projects for production:
 
 ```bash
 npm run build
 ```
 
-4. Start the server:
+## Running in Production
+
+To start both the backend and frontend in production mode:
 
 ```bash
-npm start
-```
-
-For development with hot-reloading:
-
-```bash
-npm run dev
+npm run start
 ```
 
 ## API Endpoints
