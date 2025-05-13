@@ -1,1 +1,0 @@
-export { HerroBannerByAnima } from "./HerroBannerByAnima";

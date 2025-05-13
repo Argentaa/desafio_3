@@ -1,0 +1,146 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --body-12px-bold-font-family: "SVN-Gilroy", Helvetica;
+  --body-12px-bold-font-size: 12px;
+  --body-12px-bold-font-style: normal;
+  --body-12px-bold-font-weight: 700;
+  --body-12px-bold-letter-spacing: 0px;
+  --body-12px-bold-line-height: 18px;
+  --body-12px-medium-font-family: "SVN-Gilroy", Helvetica;
+  --body-12px-medium-font-size: 12px;
+  --body-12px-medium-font-style: normal;
+  --body-12px-medium-font-weight: 500;
+  --body-12px-medium-letter-spacing: 0px;
+  --body-12px-medium-line-height: 18px;
+  --body-14px-bold-font-family: "SVN-Gilroy", Helvetica;
+  --body-14px-bold-font-size: 14px;
+  --body-14px-bold-font-style: normal;
+  --body-14px-bold-font-weight: 700;
+  --body-14px-bold-letter-spacing: 0px;
+  --body-14px-bold-line-height: 20px;
+  --body-14px-medium-font-family: "SVN-Gilroy", Helvetica;
+  --body-14px-medium-font-size: 14px;
+  --body-14px-medium-font-style: normal;
+  --body-14px-medium-font-weight: 500;
+  --body-14px-medium-letter-spacing: 0px;
+  --body-14px-medium-line-height: 20px;
+  --body-16px-bold-font-family: "SVN-Gilroy", Helvetica;
+  --body-16px-bold-font-size: 16px;
+  --body-16px-bold-font-style: normal;
+  --body-16px-bold-font-weight: 700;
+  --body-16px-bold-letter-spacing: 0px;
+  --body-16px-bold-line-height: 24px;
+  --body-16px-medium-font-family: "SVN-Gilroy", Helvetica;
+  --body-16px-medium-font-size: 16px;
+  --body-16px-medium-font-style: normal;
+  --body-16px-medium-font-weight: 500;
+  --body-16px-medium-letter-spacing: 0px;
+  --body-16px-medium-line-height: 24px;
+  --heading-24px-bold-font-family: "SVN-Gilroy", Helvetica;
+  --heading-24px-bold-font-size: 24px;
+  --heading-24px-bold-font-style: normal;
+  --heading-24px-bold-font-weight: 700;
+  --heading-24px-bold-letter-spacing: 0px;
+  --heading-24px-bold-line-height: 36px;
+  --neutral-color00: rgba(253, 253, 253, 1);
+  --neutral-color10: rgba(235, 238, 239, 1);
+  --neutral-color100: rgba(0, 23, 31, 1);
+  --neutral-color20: rgba(204, 209, 210, 1);
+  --neutral-color40: rgba(153, 162, 165, 1);
+  --neutral-color60: rgba(102, 116, 121, 1);
+  --neutral-color80: rgba(36, 43, 51, 1);
+  --primary-colordark-blue: rgba(0, 52, 89, 1);
+  --primary-colordark-blue-80: rgba(0, 42, 72, 1);
+  --state-colorpink-red: rgba(255, 86, 79, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
