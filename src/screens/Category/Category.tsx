@@ -25,6 +25,7 @@ import {
   SelectItem,
   SelectTrigger,
 } from "../../components/ui/select";
+import { HeaderDesktop } from "./sections/HeaderDesktop";
 
 export const Category = (): JSX.Element => {
   // Dog card data
@@ -172,85 +173,7 @@ export const Category = (): JSX.Element => {
     <div className="bg-[#fcfcfc] flex flex-row justify-center w-full">
       <div className="bg-neutral-color00 overflow-hidden w-[1440px] h-[3119px] relative">
         {/* Header/Navigation */}
-        <header className="flex w-[1440px] items-center justify-between px-[130px] py-7 absolute top-0 left-0">
-          <div className="flex items-center gap-12">
-            <div className="relative w-[115px] h-10">
-              <img
-                className="absolute w-[55px] h-[7px] top-[33px] left-[30px]"
-                alt="Group"
-                src="/group-2.png"
-              />
-              <img
-                className="absolute w-[114px] h-[27px] top-0 left-0"
-                alt="Group"
-                src="/group-3.png"
-              />
-            </div>
-
-            <NavigationMenu>
-              <NavigationMenuList className="flex items-start gap-12">
-                <NavigationMenuItem>
-                  <Button
-                    variant="link"
-                    className="font-body-16px-bold text-primary-colordark-blue"
-                  >
-                    Home
-                  </Button>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Button
-                    variant="link"
-                    className="font-body-16px-bold text-primary-colordark-blue"
-                  >
-                    Category
-                  </Button>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Button
-                    variant="link"
-                    className="font-body-16px-bold text-primary-colordark-blue"
-                  >
-                    About
-                  </Button>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Button
-                    variant="link"
-                    className="font-body-16px-bold text-primary-colordark-blue"
-                  >
-                    Contact
-                  </Button>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </div>
-
-          <div className="flex items-start gap-3.5">
-            <div className="flex w-[280px] items-center gap-3 pl-4 pr-5 py-3 bg-neutral-color00 rounded-[46px]">
-              <SearchIcon className="w-5 h-5" />
-              <Input
-                className="border-0 shadow-none font-body-14px-medium text-neutral-color40"
-                placeholder="SearchIcon something here!"
-              />
-            </div>
-
-            <Button className="h-11 bg-primary-colordark-blue rounded-[57px] font-body-16px-bold text-neutral-color00">
-              Join the community
-            </Button>
-
-            <div className="flex items-center justify-end gap-1 pt-2.5 pb-2 px-2 self-stretch">
-              <div className="flex items-center gap-1.5">
-                <div className="relative w-[21px] h-[21px]">
-                  <div className="relative w-4 h-4 top-0.5 left-[3px] bg-[url(/group-4.png)] bg-[100%_100%]" />
-                </div>
-                <span className="font-medium text-primary-colordark-blue-80 text-base leading-[23px] whitespace-nowrap">
-                  VND
-                </span>
-              </div>
-              <ChevronDownIcon className="w-6 h-6" />
-            </div>
-          </div>
-        </header>
+        <HeaderDesktop />
 
         {/* Breadcrumb */}
         <div className="flex items-center gap-1.5 absolute top-[107px] left-[130px]">

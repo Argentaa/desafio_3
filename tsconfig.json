@@ -7,8 +7,10 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "moduleResolution": "node"
   },
   "include": ["src/**/*"],
-  "exclude": ["db/node_modules"]
+  "exclude": ["db/node_modules", "node_modules"]
 }
